@@ -63,7 +63,7 @@ class NewPath():
         try:
             line_wid = units.parse_unit(self.style['stroke-width'])[0]
         except:
-            line_wid = self.svg.unittouu('1px') 
+            line_wid = 0.264583 #self.svg.unittouu('1px')   ### This does not have svg
         return line_wid
 
     def start_end(self):
